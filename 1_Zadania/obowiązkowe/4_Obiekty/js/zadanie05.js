@@ -31,3 +31,23 @@ var animals = [
     }
 
 ]
+
+console.log("Zadanie 5:");
+
+for (var i=0; i<animals.length; i++) {
+    var animal = "";
+    var objectCheck = false;
+
+    for(var el in animals[i]) {
+        objectCheck = Array.isArray(animals[i][el]);
+        if(objectCheck === true) {
+            var subElements = animals[i][el];
+            for(var j=0; j<subElements.length; j++) {
+                for(var subEl in subElements[j])
+                    animal += subElements[j][subEl] + " ";
+            }
+        } else
+            animal += animals[i][el] + " ";
+    }
+    console.log(animal);
+}

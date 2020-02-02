@@ -9,3 +9,11 @@ var movie = {
     time: "2h 58 min",
     category: " Adventure, Drama, Fantasy"
 }
+
+console.log("Zadanie 4:");
+
+let data = "";
+for (let el in movie)
+    data += movie[el] + " ";
+
+console.log(data);

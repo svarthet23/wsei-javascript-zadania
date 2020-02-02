@@ -2,9 +2,18 @@ var calculator = {
     save: function (newA, newB) {
         this.a = newA;
         this.b = newB;
+    },
+    sum() {
+        return this.a+this.b;
+    },
+    multiply() {
+        return this.a*this.b;
     }
+    
 
 };
+
+console.log("Zadanie 2:");
 
 calculator.save(2, 3);
 console.log(calculator.sum());

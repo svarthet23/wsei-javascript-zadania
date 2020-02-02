@@ -5,28 +5,28 @@
  */
 
 
-//Twoj komentarz ...
+//zdefiniowanie funkcji jeden()
 function jeden() {
 
-    //Twoj komentarz ...
+    //zdefiniowanie zmienna1 wewnątrz funkcji jeden()
     var zmienna1 = 1;
 
-    //Twoj komentarz ...
+    //zdefiniowanie funkcji dwa()
     function dwa() {
 
-        //Twoj komentarz ...
+        //wywołanie zdefiniowanej wcześniej zmienna1 (funkcja ma dostęp do zmiennych funkcji do której należy)
         console.log(zmienna1);
 
-        //Twoj komentarz ...
+        //zdefiniowanie zmienna2 wewnątrz funkcji dwa()
         var zmienna2 = 3;
     }
 
-    //Twoj komentarz ...
+    //wywołanie funkcji dwa()
     dwa();
 
-    //Twoj komentarz ...
+    //próba wywołania zmienna2 (funkcja jeden() nie ma dostępu do zmiennej w funkcji zdefiniowanej wewnątrz)
     console.log(zmienna2)
 }
 
-//Twoj komentarz ...
+//wywołanie funkcji jeden()
 jeden()
